@@ -2,11 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro'
 ---
 <Navbar />
 <div class="h-32"></div>
 <Layout title="Welcome to Astro.">
-	<main>
+	<Hero />
+	<main class="h-[50vh]">
+		<div class="h-full bg-blue-200">hi</div>
+		
 		<!-- <svg
 			class="astro-a"
 			width="495"
@@ -36,7 +40,7 @@ import Navbar from '../components/Navbar.astro';
 			</defs>
 		</svg>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1> -->
-		<p class="instructions">
+		<!-- <p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p> 
@@ -85,20 +89,20 @@ import Navbar from '../components/Navbar.astro';
 				href="https://astro.build/chat/"
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
-			/>
+			/> -->
 		</ul>
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: auto;
+		/* margin: auto;
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
-		line-height: 1.6;
+		line-height: 1.6; */
 	}
 	.astro-a {
 		position: relative;
