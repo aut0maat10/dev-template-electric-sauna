@@ -1,0 +1,51 @@
+<div class="bg-sky-700 p-8">
+  <div class="max-w-2xl mx-auto bg-white rounded p-6 shadow-md">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+
+    <!-- Form -->
+    <form id="contactForm" action="#" method="post">
+
+        <!-- Name Field -->
+        <div class="mb-4">
+            <label for="name" class="block text-gray-600 font-semibold">Name <span class="text-red-500">*</span></label>
+            <input type="text" id="name" name="name" class="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring focus:border-blue-300">
+        </div>
+
+        <!-- Email Field -->
+        <div class="mb-4">
+            <label for="email" class="block text-gray-600 font-semibold">Email <span class="text-red-500">*</span></label>
+            <input type="email" id="email" name="email" class="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring focus:border-blue-300">
+        </div>
+
+        <!-- Phone Field -->
+        <div class="mb-4">
+            <label for="phone" class="block text-gray-600 font-semibold">Phone <span class="text-red-500">*</span></label>
+            <input type="tel" id="phone" name="phone" class="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring focus:border-blue-300">
+        </div>
+
+        <!-- How can we help you? Field -->
+        <div class="mb-4">
+            <label for="help" class="block text-gray-600 font-semibold">How can we help you? <span class="text-red-500">*</span></label>
+            <textarea id="help" name="help" rows="4" class="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring focus:border-blue-300"></textarea>
+        </div>
+
+        <!-- <div class="g-recaptcha" data-sitekey=""></div> -->
+
+        <!-- Submit Button -->
+        <button type="submit" class="g-recaptcha bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 focus:outline-none focus:ring focus:border-blue-300" data-sitekey="%reCAPTCHA_site_key%" 
+        data-callback='onSubmit'
+        data-action='submit'>Submit</button>
+
+      </form>
+    
+      <!-- Warnings for Required Fields -->
+      <div id="warnings" class="mt-4 text-red-500"></div>
+
+  </div>
+</div>
+
+<script>
+  function onSubmit(token) {
+    document.getElementById("contactForm").submit();
+  }
+</script>

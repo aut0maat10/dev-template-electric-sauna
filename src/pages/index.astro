@@ -4,14 +4,19 @@ import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 import Reviews from '../components/Reviews.astro';
+import ContactForm from '../components/ContactForm.astro'
+import Banner from '../components/Banner.astro'
+
 ---
 <Navbar />
 <div class="h-32"></div>
 <Layout title="Welcome to Astro.">
 	<Hero />
 	<main class="h-[50vh]">
+		<Banner />
+		<ContactForm />
 		<Reviews />
-		<div class="h-full bg-amber-300">hi</div>
+		<div class="h-full bg-stone-100">hi</div>
 		
 		<!-- <svg
 			class="astro-a"
