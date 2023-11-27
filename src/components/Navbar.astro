@@ -16,21 +16,21 @@ import Logo from '/src/logo-placeholder.png'
                 s<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>   
         </button>
-        <ul class="fixed left-0 right-0 min-h-screen bg-sky-700 text-amber-300 text-xl font-barlow space-y-4 p-4 transform translate-x-full transition duration-300 md:relative md:flex md:items-center md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0" :class="{'translate-x-full': !navbarOpen, 'translate-x-0': navbarOpen}">
+        <ul class="fixed left-0 right-0 min-h-screen bg-sky-700 text-amber-300 font-barlow space-y-4 p-4 transform translate-x-full transition duration-300 md:relative md:flex md:items-center md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0" :class="{'translate-x-full': !navbarOpen, 'translate-x-0': navbarOpen}">
             <li>
-                <a href="#">Home</a>
+                <a :class="{'text-xl': !scrolledFromTop, 'text-lg transform duration-300 ease': scrolledFromTop}" href="#">Home</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a :class="{'text-xl': !scrolledFromTop, 'text-lg transform duration-300 ease': scrolledFromTop}" href="#about">About</a>
             </li>
             <li>
-                <a href="#reviews">Reviews</a>
+                <a :class="{'text-xl': !scrolledFromTop, 'text-lg transform duration-300 ease': scrolledFromTop}" href="#reviews">Reviews</a>
             </li>
             <li>
-                <a href="#contact">Contact Us</a>
+                <a :class="{'text-xl': !scrolledFromTop, 'text-lg transform duration-300 ease': scrolledFromTop}" href="#contact">Contact Us</a>
             </li>
             <li>
-               <button class="px-6 m-2 text-lg text-white transition-colors duration-150 bg-red-600 rounded-lg focus:shadow-outline hover:bg-red-700" :class="{'h-12': !scrolledFromTop, 'h-10 px-4': scrolledFromTop}">Get a Free Quote!</button>
+               <button class="px-6 m-2 text-white transition-colors duration-300 bg-red-600 rounded-lg focus:shadow-outline hover:bg-red-700" :class="{'h-12 text-xl': !scrolledFromTop, 'h-10 px-4 text-lg': scrolledFromTop}">Get a Free Quote!</button>
             </li>
         </ul>
     </nav>
