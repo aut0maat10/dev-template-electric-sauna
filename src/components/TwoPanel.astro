@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import Plumbers from '../plumbers-preview.jpeg'
+import CtaButton from '../components/CtaButton.astro'
+---
+
+<div class="flex flex-col md:flex-row bg-stone-100">
+  <div class="flex-1 p-8 lg:p-28">
+    <Image class="" src={Plumbers} alt="Two plumbers standing by van" />
+  </div>
+  <div class="flex-1 p-8 lg:p-28 text-xl text-stone-800 flex flex-col">
+    <p>Ut ullamco irure nulla duis amet ea sit esse. Voluptate esse eiusmod nisi eiusmod. Sit anim tempor ex nulla velit duis irure est. Culpa laborum qui commodo aliqua ad sint ullamco nisi ullamco eiusmod.<br/><br>Lorem ut dolore sint nisi id nulla esse excepteur duis Lorem laborum. Occaecat cupidatat ullamco in pariatur ex mollit ex officia deserunt est ullamco et. Quis nostrud anim mollit eiusmod reprehenderit.</p>
+    <CtaButton Href="https://google.com" CtaText="Contact Us!"/>
+  </div>
+</div>

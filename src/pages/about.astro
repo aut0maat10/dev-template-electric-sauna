@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'
+import Footer from '../components/Footer.astro'
+import TextHeader from '../components/TextHeader.astro'
+import TwoPanel from '../components/TwoPanel.astro'
+
+---
+
+<Navbar />
+<Layout title="Acme plumbing">
+  <!-- push down content below space occupied by sticky nav -->
+  <div class="h-32"></div>
+  <TextHeader title='We are locally owned and operated.'/>
+  <TwoPanel />
+  <Footer />
+</Layout>
+

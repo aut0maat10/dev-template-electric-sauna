@@ -1,0 +1,11 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title, color } = Astro.props;
+---
+
+<div class="bg-stone-800 dvw-[100] h-16 lg:h-32 flex items-center justify-center">
+  <h3 class="font-albert-sans text-xl lg:text-3xl text-amber-300">{ title }</h3>
+</div>
