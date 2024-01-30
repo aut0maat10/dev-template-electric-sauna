@@ -1,10 +1,10 @@
-<div class="bg-sky-700 pt-6 md:pb-24">
-  <h3 class="text-amber-300 text-5xl pt-6 pb-12 text-center">Contact Us</h3>
+<div x-data="{ shown: false }" x-intersect.treshold.50="shown = true" class="bg-sky-700 pt-6 md:pb-24">
+  <h3 id="contact-form" class="text-amber-300 text-5xl pt-6 pb-12 text-center">Contact Us</h3>
   <div class="max-w-2xl mx-auto bg-white rounded p-6 shadow-md">
     <!-- <h2 class="text-2xl font-bold mb-4">Contact Us</h2> -->
 
     <!-- Form -->
-    <form id="contactForm" action="#" method="post">
+    <form action="#" method="post">
 
         <!-- Name Field -->
         <div class="mb-4">

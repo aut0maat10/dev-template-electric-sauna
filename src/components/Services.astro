@@ -8,11 +8,21 @@ import Pipe from '../icons/pipe.svg'
 import Toilet from '../icons/toilet.svg'
 import Washer from '../icons/washer.svg'
 ---
-<div class="text-center bg-stone-100 flex flex-col items-center pt-6 pb-12">
-  <h3 class="text-stone-800 text-5xl p-6">Services</h3>
+<div x-data="{ shown: false }" x-intersect.treshold.50="shown = true" class="text-center bg-stone-100 flex flex-col items-center pt-6 pb-12">
+  <h3 
+    x-show="shown" 
+    x-transition:enter="transition ease-in duration-500"
+    x-transition:enter-start="opacity-0 -translate-x-5"
+    x-transition:enter-end="opacity-100 translate-x-0"
+    class="text-stone-800 text-5xl p-6">Services</h3>
   <div class="max-w-7xl grid auto-rows-fr sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center bg-stone-100 p-4 gap-4">
     <!-- Card Container -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
+    <div 
+      x-show="shown" 
+      x-transition:enter="transition ease-in duration-500"
+      x-transition:enter-start="opacity-0 -translate-x-5"
+      x-transition:enter-end="opacity-100 translate-x-0"
+      class="bg-white p-6 rounded-lg shadow-md">
       <!-- Placeholder Icon -->
       <div class="flex gap-2 justify-center">
           <!-- You can replace the 'fa-icon' class with the appropriate Font Awesome or other icon library class -->
@@ -25,7 +35,12 @@ import Washer from '../icons/washer.svg'
     </div>
 
     <!-- Card Container -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
+    <div 
+      x-show="shown" 
+      x-transition:enter="transition ease-in duration-500"
+      x-transition:enter-start="opacity-0 -translate-x-5"
+      x-transition:enter-end="opacity-100 translate-x-0"
+      class="bg-white p-6 rounded-lg shadow-md">
 
       <!-- Placeholder Icon -->
       <div class="flex gap-2 justify-center">
@@ -41,7 +56,12 @@ import Washer from '../icons/washer.svg'
     </div>
 
     <!-- Card Container -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
+    <div 
+      x-show="shown" 
+      x-transition:enter="transition ease-in duration-500"
+      x-transition:enter-start="opacity-0 translate-x-5"
+      x-transition:enter-end="opacity-100 translate-x-0"
+      class="bg-white p-6 rounded-lg shadow-md">
 
       <!-- Placeholder Icon -->
       <div class="flex gap-2 justify-center">
@@ -57,7 +77,12 @@ import Washer from '../icons/washer.svg'
     </div>
 
     <!-- Card Container -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
+    <div 
+      x-show="shown" 
+      x-transition:enter="transition ease-in duration-500"
+      x-transition:enter-start="opacity-0 translate-x-5"
+      x-transition:enter-end="opacity-100 translate-x-0"
+      class="bg-white p-6 rounded-lg shadow-md">
 
       <!-- Placeholder Icon -->
       <div class="flex gap-2 justify-center">
@@ -75,7 +100,12 @@ import Washer from '../icons/washer.svg'
     </div>
 
     <!-- Card Container -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
+    <div 
+      x-show="shown" 
+      x-transition:enter="transition ease-in duration-500"
+      x-transition:enter-start="opacity-0 -translate-x-5"
+      x-transition:enter-end="opacity-100 translate-x-0"
+      class="bg-white p-6 rounded-lg shadow-md">
 
       <!-- Placeholder Icon -->
       <div class="flex gap-2 justify-center">
@@ -93,7 +123,12 @@ import Washer from '../icons/washer.svg'
     </div>
 
     <!-- Card Container -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
+    <div 
+      x-show="shown" 
+      x-transition:enter="transition ease-in duration-500"
+      x-transition:enter-start="opacity-0 -translate-x-5"
+      x-transition:enter-end="opacity-100 translate-x-0"
+      class="bg-white p-6 rounded-lg shadow-md">
 
       <!-- Placeholder Icon -->
       <div class="flex justify-center gap-2">

@@ -1,3 +1,7 @@
-<div class="bg-red-600 dvw-[100] h-16 lg:h-20 flex items-center justify-center">
-  <h3 class="font-albert-sans text-white text-xl lg:text-3xl">Proudly serving our community since 2007</h3>
+<div x-data="{ shown: false }" x-intersect.full="shown = true" class="bg-red-600 dvw-[100] h-16 lg:h-20 flex items-center justify-center">
+  <h3 
+    x-show="shown" 
+    x-transition:enter="transition ease-in duration-500"
+    class="font-albert-sans text-white text-xl lg:text-3xl">
+    Proudly serving our community since 2007</h3>
 </div>

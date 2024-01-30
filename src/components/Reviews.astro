@@ -3,9 +3,14 @@
   <div class="container mx-auto">
     <h3 class="text-stone-800 text-5xl pt-6 pb-12 text-center">Customer Reviews</h3>
 
-      <div class="flex flex-wrap justify-center">
+      <div x-data="{ shown: false }" x-intersect="shown = true" class="flex flex-wrap justify-center">
           <!-- Review Card 1 -->
-          <div class="max-w-sm mx-4 mb-8 bg-slate-50 shadow-lg rounded-lg overflow-hidden">
+          <div 
+            x-show="shown" 
+            x-transition:enter="transition ease-in duration-500"
+            x-transition:enter-start="opacity-0 -translate-x-5"
+            x-transition:enter-end="opacity-100 translate-x-0"
+            class="max-w-sm mx-4 mb-8 bg-slate-50 shadow-lg rounded-lg overflow-hidden">
               <div class="px-6 py-4">
                   <div class="flex items-center mb-4">
                       <div class="text-xl  text-slate-800 font-bold">John Doe</div>
@@ -24,8 +29,14 @@
           </div>
 
           <!-- Review Card 2 -->
-          <div class="max-w-sm mx-4 mb-8 bg-white shadow-lg rounded-lg overflow-hidden">
-              <div class="px-6 py-4">
+          <div 
+            x-show="shown" 
+            x-transition:enter="transition ease-in duration-500"
+            x-transition:enter-start="opacity-0 translate-y-5"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            class="max-w-sm mx-4 mb-8 bg-white shadow-lg rounded-lg overflow-hidden">
+              <div 
+                class="px-6 py-4">
                   <div class="flex items-center mb-4">
                       <div class="text-xl font-bold">Jane Smith</div>
                       <div class="ml-auto flex">
@@ -43,7 +54,12 @@
           </div>
 
           <!-- Review Card 3 -->
-          <div class="max-w-sm mx-4 mb-8 bg-white shadow-lg rounded-lg overflow-hidden">
+          <div 
+            x-show="shown" 
+            x-transition:enter="transition ease-in duration-500"
+            x-transition:enter-start="opacity-0 translate-x-5"
+            x-transition:enter-end="opacity-100 translate-x-0"
+            class="max-w-sm mx-4 mb-8 bg-white shadow-lg rounded-lg overflow-hidden">
               <div class="px-6 py-4">
                   <div class="flex items-center mb-4">
                       <div class="text-xl font-bold">Robert Johnson</div>
